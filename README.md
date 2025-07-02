@@ -55,7 +55,7 @@ project/
 
 ## Data Processing
 
-```python
+
 # 1. Load and preprocess data
 df = pd.read_csv("aggregated_master.csv")
 
@@ -95,7 +95,7 @@ def residual_block(x, filters, kernel_size, dilation_rate):
 # Input -> Conv1D -> 3 Residual Blocks (dilation=1,2,4) -> 
 # MultiHeadAttention -> GlobalAveragePooling -> Dense Layers
 
-Training:
+# Training:
 # Class-weighted Focal Loss
 class_counts = np.bincount(y_train)
 class_weights = len(y_train) / (num_classes * class_counts)
@@ -119,7 +119,7 @@ history = base_model.fit(
     ]
 )
 
-Evaluation
+# Evaluation
 Metrics Reported:
 Precision, Recall, F1-score per class
 
@@ -137,7 +137,7 @@ for class_idx in range(num_classes):
     thresholds[class_idx] = thresh[np.argmax(f1_scores)]
 
 
-Results:
+# Results:
 Model achieves improved performance on minority classes through:
 
 Class-weighted focal loss
