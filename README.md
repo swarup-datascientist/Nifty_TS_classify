@@ -74,7 +74,7 @@ for i in range(len(df) - window_size):
     X_sequences.append(window)
     y_labels.append(label)
 
-Model Architecture:
+# Model Architecture:
 
 def residual_block(x, filters, kernel_size, dilation_rate):
     # 1D convolution with skip connection
