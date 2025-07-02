@@ -127,7 +127,7 @@ Confusion matrices
 
 Training vs validation accuracy
 
-Threshold Optimization:
+# Threshold Optimization:
 for class_idx in range(num_classes):
     precision, recall, thresh = precision_recall_curve(
         (y_val == class_idx).astype(int), 
