@@ -20,7 +20,7 @@ This project implements a deep learning model combining Temporal Convolutional N
 project/
 ├── best_model.h5 # Best model weights during training
 ├── final_model.h5 # Final model with threshold optimization
-├── main.py # Main training script
+├── nifty_model.py # Main training script
 └── README.md # This documentation
 
 
