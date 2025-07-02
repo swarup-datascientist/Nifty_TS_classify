@@ -57,7 +57,7 @@ project/
 
 ```python
 # 1. Load and preprocess data
-df = pd.read_csv("/content/aggregated_master.csv")
+df = pd.read_csv("aggregated_master.csv")
 
 # 2. Encode categorical features
 for col in categorical_cols:
